@@ -1,0 +1,506 @@
+@font-face {
+    font-family: Noto;
+    src: url(Font/NotoSansJP-Regular.otf);
+}
+body{
+    font-family: Noto;
+font-size:2.5vw;
+background-image:url(Image/design/background.png);
+background-size:contain;
+padding:0;
+margin:0;
+}
+ul,p{
+    padding:0;
+    margin:0;
+}
+#space{
+    margin-bottom: 15vw;
+}
+#space_s{
+    margin-bottom:5vw;
+}
+#space_m{
+    margin-bottom:8vw;
+}
+#space_footer{
+    margin-bottom:15vw;
+}
+
+/*top*/
+#top_text{
+    font-size: 3vw;
+    text-align: center;
+}
+
+
+/*topic_1*/
+#topic_1{
+    margin:0 auto;
+    width:90%;
+    padding-top:5vw;
+    padding-bottom:5vw;
+    border-radius:2vw;
+    background-color: #ffffff;
+    outline:0.2vw solid #f03576;
+}
+#video{
+    text-align: center;
+}
+/*まずは動画を見てみよう！*/
+#title{
+    margin:0 auto;
+    width:65%;
+    background-color: #f03576;
+    border-radius: 20vw;
+    padding:0.1vw 0 0.1vw 0;
+    
+}
+
+h2[for="tab"]{
+    text-align: center;
+    color:white;
+}
+
+/*目次　menu*/
+h2[for="menu"]{
+    margin:0 auto;
+    text-align: center;
+    width:80%;
+    padding:1.5vw;
+    color:#f03576;
+    border-bottom: 0.2vw dashed #f03576;
+}
+a{  
+    color:black;
+   text-decoration: none; 
+}
+a:hover{
+    color:#f03576;
+    transition: 0.2s;
+}
+ul{
+    padding:0 0 2vw 10vw;
+}
+li{
+  padding-top:0.2vw;
+}
+h2[for="hl"]{
+    border-bottom:0.5vw dashed #f03576;
+}
+#menu{
+    width:100%;
+    outline: 0.2vw solid #f03576;
+    border-radius:2vw;
+}
+
+#best20_title{
+    text-align: center;
+}
+
+/*タブ１　枠周りについて*/
+p[for="tab1_text"]{
+    font-size: 2.8vw;
+    padding:1vw;
+    font-weight: bold;
+}
+
+
+
+/*タブ２　ライバーランキング*/
+#liver{
+    border-radius: 2vw;
+    background-color: rgb(255, 239, 241);
+    padding-bottom:6vw;
+}
+h2[for="hl_2"]{
+    padding:5vw 0 1vw 0;
+    margin:0 auto;
+    text-align: center;
+    width:90%;
+    border-bottom:0.5vw dashed #f03576;
+}
+h3[for="title_2"]{
+    width:40%;
+    text-align:center;
+    padding:0.5vw 0 0.5vw 0;
+    margin:0 auto;
+    color:white;
+    background-color: #f03576;
+    border-radius:10vw;
+}
+/*ライバーコンテンツ*/
+#liver_content{
+    display:flex;
+}
+/*アイコン*/
+#liver_icon{
+    padding:5vw;
+    width:50%;
+    text-align: center;
+}
+#liver_icon img{
+    border-radius:20vw;
+    filter: drop-shadow(0 1vw 0.5vw rgb(188, 145, 153));
+}
+#liver_icon img:hover{
+    filter:none;
+    transform: translateY(1vw);
+    transition: .2s;
+}
+
+/*SNSボタン*/
+#liver_sns{
+    text-align: center;
+    width:50%;
+    margin:4vw;
+}
+#sns_button{
+    padding:2vw;
+}
+p[for="sns"]{
+    font-size:3vw;
+    color:black;
+    margin:0 auto;
+    width:80%;
+    padding:1vw 0  1vw 0;
+    outline:0.2vw solid #f03576;
+    border-radius: 20vw;
+}
+P[for="sns"]:hover{
+    color:white;
+    background-color: #f03576;
+    transition:0.2s;
+}
+#timezone_img{
+    text-align: center;
+}
+#timezone{
+    margin:0 auto;
+    width:90%;
+    padding-top:2vw;
+    border-radius:1.5vw;
+    background-color:white;
+}
+    
+
+
+
+
+
+
+
+
+/* タブ選択　*/
+.tab {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px;
+    max-width: 90%;
+    margin:0 auto;
+    
+}
+.tab > label {
+    flex: 1 1;
+    order: -1;
+    opacity: 0.5;
+    min-width: 70px;
+    padding: 3vw;
+    border-top-left-radius: 5vw;
+    border-top-right-radius: 5vw;
+    background-color: #e91b63;
+    font-size: 3vw;
+    text-align: center;
+    color:white;
+    cursor: pointer;
+}
+.tab > label:hover {
+    background-color:#f03576;
+}
+.tab input {
+    display: none;
+}
+/*タブ本体*/
+.tab > div {
+    display: none;
+    width: 100%;
+    padding: 5vw;
+    background-color: white;
+    border-bottom-left-radius:2vw;
+    border-bottom-right-radius:2vw;
+}
+.tab label:has(:checked) {
+    opacity: 1;
+}
+.tab label:has(:checked) + div {
+    display: block;
+}
+
+
+#footer_logo{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*PC用　上記のCSSコピペして変更点だけ直せばOK！*/
+@media screen and (min-width: 960px) {  
+    @font-face {
+        font-family: Noto;
+        src: url(Font/NotoSansJP-Regular.otf);
+    }
+    body{
+        font-family: Noto;
+        font-size:1.3vw;
+        background-image:url(Image/design/background.png);
+        background-size:contain;
+        padding:0;
+        margin:0;
+    }
+    ul,p{
+        padding:0;
+        margin:0;
+    }
+    #space{
+        margin-bottom: 8vw;
+    }
+    #space_s{
+        margin-bottom:5vw;
+    }
+    #space_m{
+        margin-bottom:8vw;
+    }
+    #space_footer{
+        margin-bottom:15vw;
+    }
+    #space_media{
+        margin-bottom:3vw;
+    }
+    #space_media_s{
+        margin-bottom:1vw;
+    }
+    
+    /*top*/
+    #top_text{
+        font-size: 3vw;
+        text-align: center;
+    }
+    
+    
+    /*topic_1*/
+    #topic_1{
+        margin:0 auto;
+        width:70%;
+        padding-top:5vw;
+        padding-bottom:5vw;
+        border-radius:2vw;
+        background-color: #ffffff;
+        outline:0.2vw solid #f03576;
+    }
+    #video{
+        text-align: center;
+    }
+    #video_text{
+        padding-top:3vw;
+        text-align: center;
+    }
+    /*まずは動画を見てみよう！*/
+    #title{
+        margin:0 auto;
+        width:30%;
+        background-color: #f03576;
+        border-radius: 20vw;
+        padding:0.1vw 0 0.1vw 0;
+        
+    }
+    
+    h2[for="tab"]{
+        font-size:1.5vw;
+        text-align: center;
+        color:white;
+    }
+    
+    /*目次　menu*/
+    h2[for="menu"]{
+        margin:0 auto;
+        text-align: center;
+        width:50%;
+        padding:1.5vw;
+        color:#f03576;
+        border-bottom: 0.2vw dashed #f03576;
+    }
+    a{  
+        color:black;
+       text-decoration: none; 
+    }
+    a:hover{
+        color:#f03576;
+        transition: 0.2s;
+    }
+    ul{
+        padding:0 0 2vw 10vw;
+    }
+    li{
+      padding-top:0.2vw;
+    }
+    h2[for="hl"]{
+        text-align: center;
+        margin:0 auto;
+        width:70%;
+        border-bottom:0.3vw dashed #f03576;
+    }
+    #menu{
+        margin:0 auto;
+        width:70%;
+        outline: 0.2vw solid #f03576;
+        border-radius:2vw;
+    }
+    
+    #best20_title{
+        width:70%;
+        text-align: center;
+        margin:0 auto;
+    }
+    
+    /*タブ１　枠周りについて*/
+    p[for="tab1_text"]{ 
+        text-align: left;
+        color:white;
+        margin:0 auto;
+        font-size: 1.5vw;
+        font-weight: bold;
+        background-color: #f03576;
+        border-radius: 20vw;
+        width:90%;
+    }
+    #tab_1_1,#tab_1_2,#tab_1_3,#tab_1_4{
+        
+        width:70%;
+        margin:0 auto;
+        text-align: center;
+    }
+    
+   
+
+/*タブ２　ライバーランキング*/
+#liver{
+    margin:0 auto;
+    width:80%;
+    border-radius: 2vw;
+    background-color: rgb(255, 239, 241);
+    padding-bottom:2vw;
+}
+h2[for="hl_2"]{
+    padding:2vw 0 1vw 0;
+    margin:0 auto;
+    text-align: center;
+    width:80%;
+    border-bottom:0.3vw dashed #f03576;
+}
+h3[for="title_2"]{
+    width:40%;
+    text-align:center;
+    padding:0.5vw 0 0.5vw 0;
+    margin:0 auto;
+    color:white;
+    background-color: #f03576;
+    border-radius:10vw;
+}
+/*ライバーコンテンツ*/
+#liver_content{
+    margin:0 auto;
+    width:80%;
+    display:flex;
+}
+/*アイコン*/
+#liver_icon{
+    padding:3vw;
+    width:50%;
+    text-align: center;
+}
+#liver_icon img{
+    filter: drop-shadow(0 1vw 0.5vw rgb(188, 145, 153));
+}
+#liver_icon img:hover{
+    filter:none;
+    transform: translateY(1vw);
+    transition: .2s;
+}
+
+/*SNSボタン*/
+#liver_sns{
+    text-align: center;
+    width:50%;
+    margin:4.5vw;
+}
+#sns_button{
+    padding:0.8vw;
+}
+p[for="sns"]{
+    font-size:1.5vw;
+    color:black;
+    margin:0 auto;
+    width:80%;
+    padding:0.3vw 0  0.3vw 0;
+    outline:0.2vw solid #f03576;
+    border-radius: 20vw;
+}
+P[for="sns"]:hover{
+    color:white;
+    background-color: #f03576;
+    transition:0.2s;
+}
+#timezone_img{
+    text-align: center;
+}
+#timezone{
+    margin:0 auto;
+    width:70%;
+    padding-top:1vw;
+    border-radius:1.5vw;
+    background-color:white;
+}
+    
+        
+        
+    /*タブ本体*/
+    .tab > div {
+        display: none;
+        width: 100%;
+        padding: 5vw;
+        background-color: white;
+        border-bottom-left-radius:2vw;
+        border-bottom-right-radius:2vw;
+    }
+    .tab label:has(:checked) {
+        opacity: 1;
+    }
+    .tab label:has(:checked) + div {
+        display: block;
+    }
+    
+    
+    #footer_logo{
+        margin:0 auto;
+        width:50%;
+        text-align: center;
+    }
+    
+
+
+
+	
+}
+
+
+
+
